@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<!-- 3，加载bootstrap核心Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<title>index</title>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="setting">
+				<i class="glyphicon glyphicon-cog"></i>
+			</div>
+			<div id="logo"></div>
+			<div id="add">
+				<i class="glyphicon glyphicon-chevron-left"></i>
+			</div>
+		</div>
+		<div id="main">
+			<form action="" method="get">
+				<ul id="additemtoday">
+					<li class="current"><strong>Please Choose date</strong> &nbsp;&nbsp;&nbsp;<input
+						id="calenderchoose" type="date" value="2017-01-13"></li>
+					<li class="current"><strong>Choose new item</strong> <select
+						id="selectitem">
+							<option value="X trainer">X trainer</option>
+							<option value="treadmill">treadmill</option>
+							<option value="rower">Rower</option>
+					</select></li>
+					<li class="current"><strong>Choose item size</strong> <input
+						id="defaultSlider" type="range" min="0" max="500" value="245" /></li>
+
+				</ul>
+				<div class="btns">
+					<a href="#" class="btn btn-success">Save</a> <a href="#"
+						class="btn btn-default">Cancel</a>
+				</div>
+			</form>
+		</div>
+		<ul id="bottom">
+			<li class="selected"><a id="aplan"> <i
+					class="glyphicon glyphicon-calendar"></i>
+			</a></li>
+			<li class=""><a id="arecord"><i
+					class="glyphicon glyphicon-record"></i></a></li>
+			<li class=""><a id="agym"><i
+					class="glyphicon glyphicon-fire"></i></a></li>
+			<li class=""><a id="atrainer"> <i
+					class="glyphicon glyphicon-text-size"></i>
+			</a></li>
+			<li class=""><a id="ame"><i class="glyphicon glyphicon-user"></i></a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

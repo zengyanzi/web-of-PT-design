@@ -1,0 +1,318 @@
+@CHARSET "UTF-8";
+*{margin:0px;padding:0px;}
+#page{
+	width:750px;
+	border:1px solid #333;
+	height:1314px;
+	margin: 0px auto;
+	position: relative;
+}
+#header{
+	width:750px;
+	height:68px;
+	border:1px solid red;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+#setting{
+	height:68px;
+	position: absolute;
+	left:10px;
+	width:68px;
+	line-height: 78px;
+	font-size: 50px;
+	text-align: center;
+}
+#add{
+	height:68px;
+	position: absolute;
+	right:10px;
+	width:68px;
+	line-height: 78px;
+	font-size: 50px;
+	text-align: center;
+}
+#logo{
+	height:56px;
+	width:197px;
+	position: absolute;
+	left:275px;
+	background: url("/pt_server/pic/logo.png") no-repeat;
+	top:6px;
+}
+#bottom{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:750px;
+	height:78px;
+	border:1px solid green;
+	margin:0px;
+	padding-left:10px;
+}
+#bottom>li{
+	list-style: none;
+	float:left;
+	height:78px;
+	width:146px;
+}
+#bottom>li>a{
+	height:78px;
+	width:146px;
+	display: block;
+	font-size: 60px;
+	text-align: center;
+	line-height: 78px;
+	color:gray;
+}
+#bottom>.selected>a{
+	color:blue;
+}
+#bottom>li>a:hover{
+	color:blue;
+	cursor: pointer;
+}
+#bottom>li>a>i{
+	line-height: 78px;
+}
+#main{
+	position:absolute;
+	top:70px;
+	width:748px;
+	height:1162px;
+	border:1px solid #333;
+}
+#plan{
+	margin-top:10px;
+	list-style: none;
+	overflow: hidden;
+}
+#plan>li{
+	margin:0px auto;
+	width:700px;
+	min-height:140px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+#plan>li>strong{
+	height: 50px;
+	line-height: 50px;
+	padding-left:10px;
+	font-size:24px;
+}
+#plan>li>h4{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height:50px;
+	line-height: 50px;
+	font-size: 20px;
+	color:#ccc;
+}
+#plan>li>p{
+	line-height: 46px;
+	height: 92px;
+	overflow: hidden;
+}
+.edit{
+	display:block;
+	position: absolute;
+	width:210px;
+	right:-210px;
+	top:0px;
+	height:140px;
+	line-height: 140px;
+}
+.cancel{
+	position: absolute;
+	right:-420px;
+	height:140px;
+	width:210px;
+	top:0px;
+	display:block;
+	line-height: 140px;
+}
+.slide{
+	left:-420px;
+}
+#detailplan{
+	margin-top:10px;
+	list-style: none;
+	overflow: hidden;
+}
+#detailplan>li{
+	margin:0px auto;
+	width:700px;
+	min-height:40px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+#detailplan>li>strong{
+	height: 50px;
+	line-height: 50px;
+	padding-left:10px;
+	font-size:24px;
+}
+#detailplan>li>h4{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height:50px;
+	line-height: 50px;
+	font-size: 20px;
+	color:#000;
+	font-weight:bold;
+}
+#detailplan>li>p{
+	line-height: 46px;
+	height: 92px;
+	overflow: hidden;
+}
+.dedit{
+	display:block;
+	position: absolute;
+	width:210px;
+	right:-210px;
+	top:0px;
+	height:100px;
+	line-height: 100px;
+}
+.dslide{
+	left:-210px;
+}
+
+.click{
+	position:absolute;
+	top:200px;
+	left:10px;
+	width:730px;
+	height:200px;
+	background-color:#ccc;
+	border-radius:5px;
+ 	opacity:0.8;
+	display:none;
+}
+#defaultSlider{
+	margin-top:	10px;
+	margin-bottom:10px;
+}
+.click>#save{
+	position:absolute;
+	top:110px;
+	left:150px;
+	height:60px;
+	line-height:50px;
+	width:140px;
+}
+.click>#cancel{
+	position:absolute;
+	top:110px;
+	left:410px;
+	height:60px;
+	line-height:50px;
+	width:140px;	
+}
+.click>p{
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:28px;
+	
+}
+
+#createplan{
+	margin-top:10px;
+	list-style: none;
+	overflow: hidden;
+}
+#createplan>li{
+	margin:0px auto;
+	width:700px;
+	min-height:40px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.attendance>p{
+	margin-left:150px;
+}
+#createplan>li>select{
+	margin-top:5px;
+}
+#createplan>.submit{
+	margin-left:50px;
+}
+.btns{
+	text-align: center;
+}
+#additemtoday{
+	margin-top:10px;
+	list-style: none;
+	overflow: hidden;
+}
+#additemtoday>li{
+	margin:0px auto;
+	width:700px;
+	min-height:40px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.chooseitem{
+	text-align:center;
+}
+#additemtoday>.current strong{
+	font-size:24px;
+}
+#selectitem{
+	width:210px;
+	font-size:24px;
+	height:50px;
+	line-height:50px;
+	margin-left:100px;
+	margin-bottom:10px;
+}
+#chart{
+	height:68px;
+	position: absolute;
+	right:10px;
+	width:68px;
+	line-height: 78px;
+	font-size: 50px;
+	text-align: center;
+}
+#chooserecord{
+	position:absolute;
+	right:2px;
+	top:70px;
+	height:80px;
+	width:180px;
+	background-color:black;
+	z-index:999;
+	display:none;
+}
+#chooserecord>ul>li{
+	list-style:none;
+	float:right;
+	font-size:16px;
+	height:40px;
+	color:#fff;
+	line-height:40px;
+	font-weight:bold;
+}
+#chartitem{
+	width:120px;
+	height:50px;
+}
+#chartitem>select{
+	width:120px;
+	height:40px;
+	line-height:40px;
+	float:left;
+	font-size:18px;
+}
+.chartcontent{
+	width:500px;
+	height:500px;
+	background:#ccc;
+	margin:0 auto;
+}

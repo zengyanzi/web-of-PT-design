@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<!-- 3，加载bootstrap核心Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<title>index</title>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="setting">
+				<i class="glyphicon glyphicon-arrow-left"></i>
+			</div>
+			<div id="logo"></div>
+
+		</div>
+		<div id="main">
+			<div id="chartitem">
+			<select>
+			  <option value="xtrain">xtrain</option>
+			  <option value="rower">rower</option>
+			  <option value="treadmil">treadmil</option>
+			  <option value="bike">bike</option>
+			</select>
+			</div>	
+			<div class="chartcontent">
+			</div>
+		</div>
+		<ul id="bottom">
+			<li class=""><a id="aplan"> <i
+					class="glyphicon glyphicon-calendar"></i>
+			</a></li>
+			<li class="selected"><a id="arecord"><i
+					class="glyphicon glyphicon-record"></i></a></li>
+			<li class=""><a id="agym"><i
+					class="glyphicon glyphicon-fire"></i></a></li>
+			<li class=""><a id="atrainer"> <i
+					class="glyphicon glyphicon-text-size"></i>
+			</a></li>
+			<li class=""><a id="ame"><i class="glyphicon glyphicon-user"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		$('#chart').click(function() {
+			$('#chooserecord').show(500);
+		});
+	</script>
+</body>
+</html>

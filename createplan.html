@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<!-- 3，加载bootstrap核心Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<title>index</title>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="setting">
+				<i class="glyphicon glyphicon-chevron-left"></i>
+			</div>
+			<div id="logo"></div>
+			<div id="add">
+			
+			</div>
+		</div>
+		<div id="main">
+			<form action="" method="get">
+				<ul id="createplan">
+					<li class="startdate"><strong><i
+							class="glyphicon glyphicon-calendar"></i>Please Choose start date</strong>
+						<input id="calenderchoose" type="date" value="2017-01-13" /></li>
+					<li class="startdate"><strong><i
+							class="glyphicon glyphicon-calendar"></i>Please Choose End date</strong> <input
+						id="calenderchoose" type="date" value="2017-01-13" /></li>
+					<li class="attendance"><strong><i
+							class="glyphicon glyphicon-th-list"></i>Please Choose attendance</strong>
+
+						<p>
+							<input type="checkbox" name="attendantdate" value="Monday" />
+							Monday
+						</p>
+						<p>
+							<input type="checkbox" name="attendantdate" value="Tuesday"
+								checked="checked" />Tuesday
+						</p>
+						<p>
+							<input type="checkbox" name="attendantdate" value="Wednesday" />
+							Wednesday
+						</p>
+						<p>
+							<input type="checkbox" name="attendantdate" value="Thursday" />
+							Thursday
+						</p>
+						<p>
+							<input type="checkbox" name="attendantdate" value=" Friday" />
+							Friday
+						</p>
+						<p>
+							<input type="checkbox" name="attendantdate" value="Saturday" />
+							Saturday
+						</p>
+						<p>
+							<input type="checkbox" name="attendantdate" value="Sunday" />
+							Sunday
+						</p>
+					<li class="attendance"><strong><i
+							class="glyphicon glyphicon-leaf"></i>Please Choose your plan</strong>
+						<p>
+							<input type="radio" name="plandetail" value="shape" /><strong>Shape:</strong>280Cal;
+							Helping shaping the body and achieve your perfect dream
+							style,including X trainer,rower and Yoga<br /> <input
+								type="radio" name="plandetail" value="core" /><strong>Core:</strong>280Cal;
+							Helping shaping the body and achieve your perfect dream
+							style,including X trainer,rower and Yoga <br /> <input
+								type="radio" name="plandetail" value="aerobic" /><strong>Aerobic:</strong>280Cal;
+							Helping shaping the body and achieve your perfect dream
+							style,including X trainer,rower and Yoga<br /> <input
+								type="radio" name="plandetail" value="stretching" /><strong>Stretching:</strong>280Cal;
+							Helping shaping the body and achieve your perfect dream
+							style,including X trainer,rower and Yoga<br />
+						</p></li>
+				</ul>
+				<div class="btns">
+					<input type="submit" class=" btn btn-success" value="Submit" /> <input
+						type="submit" class=" btn btn-default" value="Cancel" />
+				</div>
+			</form>
+		</div>
+		<ul id="bottom">
+			<li class="selected"><a id="aplan"> <i
+					class="glyphicon glyphicon-calendar"></i>
+			</a></li>
+			<li class=""><a id="arecord"><i
+					class="glyphicon glyphicon-record"></i></a></li>
+			<li class=""><a id="agym"><i
+					class="glyphicon glyphicon-fire"></i></a></li>
+			<li class=""><a id="atrainer"> <i
+					class="glyphicon glyphicon-text-size"></i>
+			</a></li>
+			<li class=""><a id="ame"><i class="glyphicon glyphicon-user"></i></a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('#detailplan>li').click(function() {
+			$('.click').show(500);
+		});
+		$('.click>#defaultSlider').change(function() {
+			$('.click>p').html($('#defaultSlider').val());
+		});
+	</script>
+</body>
+</html>

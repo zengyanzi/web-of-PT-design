@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<!-- 3，加载bootstrap核心Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<title>index</title>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="setting">
+				<i class="glyphicon glyphicon-cog"></i>
+			</div>
+			<div id="logo"></div>
+			<div id="chart">
+				<i class="glyphicon glyphicon-stats"></i>
+			</div>
+			<div id="chooserecord">
+				<ul>
+					<li>check by time</li>
+					<li>check by sportitem</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<ul id="detailplan">
+				<li class="date"><strong><i
+						class="glyphicon glyphicon-tint"></i>204 cal</strong>
+					<h4>01/04/2017</h4></li>
+				<li class="item">
+					<p>
+						Rower:5min<br> Note:30 sec fast;60 sec slow; Level:Moderate
+					</p>
+				</li>
+				<li class="dslide">
+					<p>
+						Rower:5min<br> Note:30 sec fast;60 sec slow;
+						Level:Moderate;Note:30 sec fast;60 sec slow; Level:Moderate
+					</p> <a href="#" class="dedit btn btn-warning">edit</a>
+				</li>
+			</ul>
+			<div class="click">
+				<p>245</p>
+				<input id="defaultSlider" type="range" min="0" max="500" value="245" />
+				<a id="save" href="#" class="btn btn-success">Finish</a> <a
+					id="cancel" href="#" class="btn btn-default">Cancel</a>
+			</div>
+		</div>
+		<ul id="bottom">
+			<li class=""><a id="aplan"> <i
+					class="glyphicon glyphicon-calendar"></i>
+			</a></li>
+			<li class="selected"><a id="arecord"><i
+					class="glyphicon glyphicon-record"></i></a></li>
+			<li class=""><a id="agym"><i
+					class="glyphicon glyphicon-fire"></i></a></li>
+			<li class=""><a id="atrainer"> <i
+					class="glyphicon glyphicon-text-size"></i>
+			</a></li>
+			<li class=""><a id="ame"><i class="glyphicon glyphicon-user"></i></a>
+			</li>
+		</ul>
+	</div>
+	<script>
+		$('#detailplan>li').click(function() {
+			$('.click').show(500);
+		});
+		$('.click>#defaultSlider').change(function() {
+			$('.click>p').html($('#defaultSlider').val());
+		});
+		$('#chart').click(function(){
+			$('#chooserecord').show(500);
+		});
+	</script>
+</body>
+</html>

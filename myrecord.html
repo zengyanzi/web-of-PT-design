@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/default.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<!-- 3，加载bootstrap核心Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<title>index</title>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="setting">
+				
+			</div>
+			<div id="logo"></div>
+			<div id="chart">
+				<i class="glyphicon glyphicon-stats"></i>
+			</div>
+			<div id="chooserecord">
+				<ul>
+					<li>check by time</li>
+					<li>check by sportitem</li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<ul id="plan">
+				<li class="current"><strong><i
+						class="glyphicon glyphicon-tint"></i>204 cal</strong>
+					<h4>01/04/2017</h4>
+					<p>Rower:5min,Treadmill:6min,Bike:4min,X Trainer:6min</p></li>
+				<li class="slide"><strong><i
+						class="glyphicon glyphicon-tint"></i>204 cal</strong>
+					<h4>01/05/2017(today)</h4>
+					<p>Rower:5min,Treadmill:6min,Bike:4min,X Trainer:6min</p> <a
+					href="#" class="cancel btn btn-danger">delete</a> <a href="#"
+					class="edit btn btn-warning">edit</a></li>
+			</ul>
+		</div>
+		<ul id="bottom">
+			<li class=""><a id="aplan"> <i
+					class="glyphicon glyphicon-calendar"></i>
+			</a></li>
+			<li class="selected"><a id="arecord"><i
+					class="glyphicon glyphicon-record"></i></a></li>
+			<li class=""><a id="agym"><i
+					class="glyphicon glyphicon-fire"></i></a></li>
+			<li class=""><a id="atrainer"> <i
+					class="glyphicon glyphicon-text-size"></i>
+			</a></li>
+			<li class=""><a id="ame"><i class="glyphicon glyphicon-user"></i></a>
+			</li>
+		</ul>
+	</div>
+
+	<script>
+		$('#chart').click(function() {
+			$('#chooserecord').show(500);
+		});
+	</script>
+</body>
+</html>
